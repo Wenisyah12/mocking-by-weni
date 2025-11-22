@@ -1,0 +1,224 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Raleway:ital", sans-serif;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #111;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header h1 span{
+    color: rgb(124, 24, 24);
+}
+
+.hamburger {
+    display: none;
+}
+
+nav a {
+    color: #fff;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn-nav {
+    background-color: red;
+    padding: 80px 14px;
+    border-radius: 5px;
+}
+
+.btn-nav:hover {
+    background-color: darkred;
+}
+
+.hero {
+    background: url('https://images.unsplash.com/photo-1518972559570-9d3b0e6f7e3c?auto=format&fit=crop&w=1500&q=80')
+    center/cover no-repeat;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-text {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    margin-top: 10px;
+}
+
+.btn-main {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-main:hover {
+    background-color: darkred;
+}
+
+.section {
+    padding: 100px;
+    min-height: 90vh;
+    text-align: center;
+}
+
+
+.artist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    padding: 0 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.artist-card {
+  background-color: #222;
+  padding: 40px 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.artist-card:hover {
+  background-color: red;
+  transform: translateY(-5px);
+}
+
+.artist-card img{
+    width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid red;
+  transition: transform 0.3s;
+}
+
+.artist-card img {
+    transform: scale(1.05);
+}
+ .artist-card p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: white;
+ }
+
+ .why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+  padding: 0 20px;
+}
+
+.why-card {
+  background-color: #111;
+  padding: 30px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.why-card:hover {
+  background-color: red;
+  transform: translateY(-5px);
+}
+
+.booking-form {
+  max-width: 500px;
+  margin: 30px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.booking-form input,
+.booking-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #222;
+  color: white;
+}
+
+.booking-form button {
+  border: none;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #111;
+  text-align: center;
+  padding: 20px;
+  color: #888;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    font-size: 28PX;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #111;
+    text-align: center;
+  }
+
+  nav.show {
+    display: flex;
+  }
+
+  nav a {
+    margin: 10px 0;
+  }
+
+  .hero h2 {
+    font-size: 1.8rem;
+  }
+
+  .section {
+    padding: 60px 15px;
+  }
+}
+

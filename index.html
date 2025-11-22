@@ -1,0 +1,115 @@
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Mocking by Weni</title>
+        <link rel="stylesheet" href="style.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+    </head>
+    <body>
+        <header>
+            <h1> Mocking by <span> Weni </span></h1>
+
+            <div class="hamburger" id="hamburger">
+               ☰ 
+            </div>
+
+            <nav id="nav-menu">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#artists">Artists</a>
+                <a href="#studio">Studio</a>
+                <a href="#book" class="btn-nav">Book Artist</a>
+            </nav>
+        </header>
+
+        <section id="home" class="hero">
+            <div class="hero-text">
+                <h2>Independent. Urban. Chill</h2>
+                <p>Redefining the sound of rap culture - one artist at a time.</p>
+                <a href="#book" class="btn-main">Book an Artist</a>
+            </div>
+        </section>
+    
+        <section id="about" class="section">
+            <h2>About Mocking by Weni</h2>
+            <p>
+                Mocking by Weni is a record label driven by individuality, authenticity, and creativity.
+                We represent artists who are not afraid to push limits and express who they truly are.
+                Our mission is to give voices that deserve to be heard a powerful stage....
+            </p>
+        </section>
+
+        <section id="artists" class="section">
+            <h2>Our Artists</h2>
+            <p>Discover our growing roster of rap talent redefining the scene</p>
+            <div class="artist-grid">
+                <div class="artist-card">
+                    <img src="zee.jpg" alt="Artist1">
+                    <p>Zee Pruk</p>
+                </div>
+                <div class="artist-card">
+                    <img src="jeff.jpg" alt="Artist2">
+                    <p>Jeff Satur</p>
+                </div>
+                <div class="artist-card">
+                    <img src="offroad.jpg" alt="Artist3">
+                    <p>Offroad Khantapon</p>    
+                </div>
+                <div class="artist-card">
+                    <img src="daou1.jpg" alt="Artist4">
+                    <p>Daou Pittaya</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="studio" class="section">
+            <h2>Book a Studio Session</h2>
+            <p>Record your next hit in our Professional studio spaces with top-tier equipment and sound engineers.
+            </p>
+            <a href="#book" class="btn-main">Book Now</a>
+        </section>
+    
+        <section id="why" class="section">
+            <h2>Why Choose Mocking by Weni</h2>
+            <div class="why-grid">
+                <div class="why-card">
+                    <h3>🎧 Authentic Sound</h3>
+                        <p>We celebrate real, raw talent - giving each artist full creative freedom</p>
+                </div>
+                <div class="why-card">
+                    <h3>🔥 Urban Vibes</h3>
+                    <p>Our brand embodies the heart of street culture and modern rap enerny.</p>
+                </div>
+                <div class="why-card">
+                    <h3>💼 Professional Network</h3>
+                    <p>We connect with producers, studios, and top-tier event organizers.  </p>
+                </div>
+            </div>
+        </section>
+        <section id="book" class="section">
+            <h2>Book an Artist</h2>
+            <form class="booking-form">
+                <input type="text" placeholder="Your Name" required />
+                <input type="email" placeholder="Your Email" required />
+                <input type="text" placeholder="Artist Name or Event" required />
+                <textarea placeholder="Message or Booking Details" rows="4"></textarea>
+                <button type="submit" class="btn-main">Submit</button>
+            </form>
+        </section>
+          
+        <footer>
+            <p>© 2025 Mocking by Weni. All rights reserved.</p>
+        </footer>
+
+        <script>
+            const hamburger=document.getElementById("hamburger");
+            const navMenu=document.getElementById("nav-menu");
+
+            hamburger.addEventListener("click",()=> {
+                navMenu.classList.toggle("show");
+            });
+        </script>
+    </body>
+
